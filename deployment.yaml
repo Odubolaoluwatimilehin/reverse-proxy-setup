@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test-app
+  name: demo
   labels:
-    app: test-app
+    app: demo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: test-app
+      app: demo
   template:
     metadata:
       labels:
-        app: test-app
+        app: demo
     spec:
       containers:
       - name: simple-express
